@@ -1,4 +1,4 @@
-import "../src/styles/app.css";
+import "./styles/App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
@@ -21,7 +21,6 @@ function App() {
     callApi();
   }, []);
 
-  
   return (
     <AppContext.Provider value={{ data: data }}>
       <BrowserRouter>
